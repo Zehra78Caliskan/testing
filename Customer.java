@@ -1,3 +1,7 @@
+package testing;
+
+package testing;
+
 import java.util.ArrayList;
 
 public class Customer 
@@ -57,25 +61,5 @@ public class Customer
         this.accounts.add(newAccount);
         return newAccount;
     }
-    public boolean closeAccount(int ID)
-    {
-        for (int i = 0; i < this.accounts.size(); i++)
-        {
-            Account account = this.accounts.get(i);
-            if (account.getID() == ID)
-            {
-                if (account.getBalance() == 0.0)
-                {
-                    this.accounts.remove(i);
-                    return true;
-                }
-                else
-                {
-                    // report non-zero balance
-                    return false;
-                }
-            }
-        }
-        return false;
-    } 
+    
 }
