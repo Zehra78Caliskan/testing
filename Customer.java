@@ -60,6 +60,7 @@ public class Customer
         Account newAccount = new Account(this, rate);
         this.accounts.add(newAccount);
         return newAccount;
+        //this is an irrelevant commment
     }
     
 }
